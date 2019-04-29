@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gmail</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="wrapper-body">
+      <div class="header">
+        <div class="wrap-logo h-48">
+          <img
+            class="logo"
+            src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x.png"
+            alt="logo"
+          />
+        </div>
+        <div class="container-search">
+                <div class="wrap-search-bar h-48">
+                        <div class="wrap-search-i">
+                          <div class="btn-icon rd-left">
+                            <div class="icon">
+                              <i class="material-icons">search</i>
+                            </div>
+                          </div>
+                        </div>
+                        <input type="text" placeholder="Tìm kiếm trong thư" />
+                        <div class="wrap-search-i">
+                          <div class="btn-icon rd-right">
+                            <div class="icon">
+                              <i class="material-icons">arrow_drop_down</i>
+                            </div>
+                          </div>
+                        </div>  
+                      </div>
+        </div>
+        <div class="btn-icon-end m-l-10">
+                <div class="icon-end">
+                  <i class="material-icons">help_outline</i>
+                </div>
+              </div>
+        <div class="btn-icon-end m-l-10">
+                    <div class="icon-end">
+                      <i class="material-icons">apps</i>
+                    </div>
+                  </div>
+        <div class="btn-icon-end m-l-10 size-46 m-r-10">
+                        <div class="icon-name-end">
+                          <p class="name-user">T</p>
+                        </div>
+                      </div>
+            </div>
+      </div>
+      <div class="container-content">
+        <div class="left">
+                <div class="container-compose"> 
+                    <div class="wrap-compose m-l-10">
+                        <div class="btn-compose-i">
+                        </div>
+                        <a class="btn-compose-text" >
+                          Soạn thư
+                        </a>
+                    </div>
+                </div>
+                <div class="menu-option">
+                  <ul class="list-option" id="style-3">
+                    <li class="item-option">
+                      <div class="item-icon item-i-1"></div>
+                      <div class="wrap-right-option">
+                          <a >Hộp thư đến</a>
+                          <div class="garbage">
+                            1
+                          </div>
+                      </div>  
+                  </li>
+                    <li class="item-option">
+                        <div class="item-icon item-i-2"></div>
+                        <div class="wrap-right-option">
+                            <a href="">Quan trọng</a>
+                            <div class="garbage">
+                              1
+                            </div>
+                        </div>  
+                    </li>
+                    <li class="item-option">
+                        <div class="item-icon item-i-3"></div>
+                        <div class="wrap-right-option">
+                            <a href="">Đã tạm ẩn</a>
+                            <div class="garbage">
+                              1
+                            </div>
+                        </div>  
+                    </li>
+                    <li class="item-option">
+                        <div class="item-icon item-i-4"></div>
+                        <div class="wrap-right-option">
+                            <a href="">Đã gửi</a>
+                            <div class="garbage">
+                              1
+                            </div>
+                        </div>  
+                    </li>
+                    <li class="item-option"  onclick="toggle_isMore()">
+                        <div class="item-icon item-i-5"></div>
+                        <div class="wrap-right-option">
+                            <a class="text-more">Danh sách mở rộng</a>
+                            <div class="garbage">
+                             
+                            </div>
+                        </div>  
+                    </li>
+                    <li class="item-option">
+                        <div class="item-icon item-i-6"></div>
+                        <div class="wrap-right-option">
+                            <a href="">Bản nháp</a>
+                            <div class="garbage">
+                              1
+                            </div>
+                        </div>  
+                    </li>
+                    <li class="item-option">
+                        <div class="item-icon item-i-7"></div>
+                        <div class="wrap-right-option">
+                            <a href="">Spam</a>
+                            <div class="garbage">
+                              1
+                            </div>
+                        </div>  
+                    </li>
+                    <li class="item-option">
+                        <div class="item-icon item-i-8"></div>
+                        <div class="wrap-right-option">
+                            <a href="">Thùng rác</a>
+                            <div class="garbage">
+                              1
+                            </div>
+                        </div>  
+                    </li>
+                  </ul>
+                </div>
+                <div class="container-ellip">
+                  <div class="wrap-ellip"></div>
+                </div>
+                <div class="info-recent">
+                  <div class="info-acc">
+                      <div class="info-user">
+                        <i class="material-icons acc-img">account_circle</i>
+                        <div class="circle"></div>
+                        <div class="wrap-name">
+                          <span class="name-user">TRAN</span>
+                          <i class="material-icons">arrow_drop_down</i>
+                        </div> 
+                      </div>
+                      <div class="btn-add-info">
+                        <i class="material-icons"> add </i>
+                      </div>
+                  </div>
+                  <div class="talk-recent">
+                    <div class="wrap-talk">
+                      <div class="icon-talk"></div>
+                      <div class="state-talk">
+                        Không có cuộc trò chuyện nào gần đây
+                      </div>
+                      <div class="start-talk">
+                        <a href="">Bắt đầu cuộc trò chuyện mới</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-info">
+                  <div class="wrap-icon1">
+                      <div class="list-hangout"></div>
+                  </div>
+                  <div class="wrap-icon2">
+                      <div class="talk-hangout"></div>
+                  </div>   
+                </div>
+        </div>
+        <div class="content"></div>
+        <div class="right"></div>
+      </div>
+    </div>
+  </body>
+  <!-- Scripts file -->
+  <script src="../js/main.js"></script>
+</html>
