@@ -1,0 +1,21 @@
+:root{
+    --bg_hover: hsla(206, 6%, 25%, 0.1);
+    --bg_shadow: hsl(200, 12%, 95%);
+}
+.active-option{
+    color: #D93025 ;
+    background-color: var(--bg_hover) ;
+    transition: none;
+    font-weight: 600;
+}
+.active-option-1{
+    background-image: url('../images/inbox.png');
+    opacity: 1 !important;
+}
+.active-cbox{
+    background-image: url('../images/cbox-selected.png') ;
+    margin-left: 5px;
+}
+.active-all-btn{
+    background-image: url('../images/cbox-selected.png') ;
+}

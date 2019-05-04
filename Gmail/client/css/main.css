@@ -7,7 +7,6 @@
     padding: 0;
     margin: 0;
     font-family: Roboto, sans-serif;
-    transition: all 0.25s;
 }
 body{
     margin: 0 auto;
@@ -32,6 +31,9 @@ body{
     display: flex;
     align-items: center;
     border-bottom: 1px solid var(--bg_hover);
+}
+.header *, .content *{
+    transition: all 0.25s;
 }
 .wrap-logo{
     align-items: center;
@@ -238,6 +240,9 @@ body{
     padding-left: 26px;
     padding-right: 12px;
     border-radius: 0px 20px 20px 0px;
+    color: #213122;
+    font-weight: 500;
+    transition: background-color .25s;
 }
 .item-option .item-icon{
     background-position: center;
@@ -252,8 +257,6 @@ body{
 .item-option a{
     font-size: 16px;
     font-family: Roboto, sans-serif;
-    color: #213122;
-    font-weight: 600;
     text-decoration: none;
 }
 .item-option .item-icon, .item-option .wrap-right-option a{
@@ -262,6 +265,7 @@ body{
 .item-option:hover{
     cursor: pointer;
     background-color: var(--bg_hover);
+    
 }
 .wrap-right-option{
     display: flex;
@@ -293,20 +297,20 @@ body{
 .item-i-8{
     background-image: url('../images/icon-trash-can.png');
 }
-#style-3::-webkit-scrollbar-track
+.style-3::-webkit-scrollbar-track
 {
 	background-color: #F5F5F5;
 }
 
-#style-3::-webkit-scrollbar
+.style-3::-webkit-scrollbar
 {
 	width: 6px;
 	background-color: #F5F5F5;
 }
 
-#style-3::-webkit-scrollbar-thumb
+.style-3::-webkit-scrollbar-thumb
 {
-	background-color: #000000;
+	background-color: #dadce0;
 }
     /*----------------------Ellipsis---------------------------*/
 .container-ellip{
@@ -496,7 +500,6 @@ body{
     margin: 0px 12px 0px 12px;
 }
 .wrap-cbox .cbox-icon{
-    background-image: url('../images/checkbox.png');
     background-position: center;
     background-size: 20px;
     background-repeat: no-repeat;
@@ -504,7 +507,9 @@ body{
     width: 30px;
     opacity: .54;
 }
-
+.wrap-cbox .all-btn{
+    background-image: url('../images/checkbox.png');
+}
 .wrap-cbox i, .content i{
     font-size: 23px;
     opacity: .54;
@@ -645,20 +650,21 @@ body{
     box-shadow: 0px 3px 3px #737373;
     opacity: 1;
     border: 1px solid var(--bg_shadow);
+    cursor: pointer;
 }
 /* //scrollbar */
-#style-1::-webkit-scrollbar-track
+.style-1::-webkit-scrollbar-track
 {
 	background-color: #F5F5F5;
 }
 
-#style-1::-webkit-scrollbar
+.style-1::-webkit-scrollbar
 {
 	width: 10px;
 	background-color: #F5F5F5;
 }
 
-#style-1::-webkit-scrollbar-thumb
+.style-1::-webkit-scrollbar-thumb
 {
 	background-color: var(--bg_hover);
 }
@@ -670,4 +676,3 @@ body{
     width: 5%;
     height: 100%;
 }
-
